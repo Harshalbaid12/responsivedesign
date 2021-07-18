@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* Hero Section  */
+
+.hero ::before{
+    content: "";
+    position: absolute;
+    background-image: url("images/coffee3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.2;
+    height: 100vh;
+
+}
+.hero{
+    color:whitesmoke;
+    height: 100vh;
+}
+
+
+.herohead img{
+    width: 8%;
+    border-radius: 50%;
+
+}
+
+.herohead{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding:2%;
+}
+
+.herohead span{
+    font-family: 'Qahiri', sans-serif;
+    font-size: 1.5em;
+    padding: 0.2em;
+}
+.hero h1{
+
+    font-size: 3.3em;
+}
+
+.head{
+    width: 51%;
+    text-align: center;
+    margin: auto;
+}
+
+.head p,h1,button{
+    margin-bottom: 8%;
+}
+.head p{
+    line-height: 1.5em;
+}
+
+
+/* Working Section */
+
+.working{
+    margin-bottom: 2%;
+}
+
+.working >h2{
+background-color:#99cfe0 ;
+padding: 1%;
+}
+
+.method h2{
+    margin-bottom: 0.3em;
+}
+
+.method{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 2%;
+}
+
+.text{
+    width: 30%;
+  
+    text-align: center;
+}
+.text img{
+    width: 15%;
+    padding: 2%;
+}
+
+.whitecircle{
+    width: 10%;
+}
+
+.blackcircle{
+    width: 11.5%;
+}
+
+.middle {
+    background-color: #F6F3EE	;
+    justify-content:flex-start
+    
+}
+
+.middle hr{
+    width: 20em;
+   
+    color: gray;
+    border: none;
+    border-top: 54px dotted;
+}
+ 
+ .middle .img{
+margin-left: 22%;
+} 
+
+.middle .text{
+    margin-left: 10%;
+}
+
+.last {
+    justify-content:flex-start;
+    
+}
+
+.last .text{
+    margin-left: 20%;
+}
+
+.last .img{
+    margin-left: 15%;
+}
+
+/* End section */
+
+.recomend {
+    
+     position: relative; 
+
+}
+
+.recomend h2{
+    font-size: 2em;
+}
+.recomend h2, .recomend h5, .recomend button{
+    margin-bottom: 2%;
+}
+
+.end{
+    position: relative;
+    padding-top: 2%;
+    color: white;
+    background-image: url("images/beans.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 40vh;
+     
+
+}
+.overlay{
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+   height: 100%;
+   width: 100%;
+   top: 0;
+  
+   
+}
+  
+
+    
+/* Footer */
+.footer{
+    height: 20vh;
+    background-color: #3d2b1f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.footer img{
+    width: 5%;
+    border-radius: 50%;
+    /* margin-left:18%; */
+
+}
+
+.footer .info{
+    margin-left: 5em;
+    line-height: 1.5em;
+}
+
+
+/* Responsive */
+
+
+@media screen and (max-width:900px){
+
+    .middle hr{
+        border-top: 30px dotted;
+        width: 14em;
+    }
+    
+}
+
+@media screen and (max-width:725px) {
+    
+    *{
+        font-size: 12px;
+    }
+     
+     .head{
+        margin-top: 15%;
+        width: 70%;
+
+    }
+
+    .herohead{
+        margin-top: 7%;
+    }
+    .middle hr{
+      
+        display: none;
+    }
+
+    .method{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .method .text{
+        width: 80%;
+        margin: 0;
+    }
+
+    .method .img{
+        margin: 0;
+    }
+
+    .first{
+        flex-direction: column;
+    }
+
+    .first .text{
+        margin-bottom: 2%;
+    }
+    
+    .footer{
+       flex-direction: column;
+    }
+    .footer .info{
+        margin: 0;
+        width: 80%;
+    }
+
+    .footer h5 {
+            
+        font-size: 0.3em;
+       
+    }
+
+    .recomend {
+        margin-top: 5%;
+    }
+}
+
+
+   
+
+
+/* Utility Classes */
+
+.center{
+  text-align: center;
+}
+
+.btn{
+    padding: 1% 10%;
+    background-color: #99cfe0;
+    border-radius: 3px;
+    border:1px solid white;
+    font-size: 1.2em;
+}
+                                               
