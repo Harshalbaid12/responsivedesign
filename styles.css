@@ -6,6 +6,10 @@
 
 /* Hero Section  */
 
+div{
+    border: 0.5px solid transparent;
+}
+
 .hero ::before{
     content: "";
     position: absolute;
@@ -222,6 +226,7 @@ margin-left: 22%;
         font-size: 12px;
     }
      
+    
      .head{
         margin-top: 15%;
         width: 70%;
